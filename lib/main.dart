@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:readingbookapp/pages/book_detail_page.dart';
 import 'package:readingbookapp/pages/home_page.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: const HomePage(),
+      // home: const HomePage(),
+      home: BookDetailPage(book: bookList[2]), // Thay thế bằng BookDetailPage
     );
   }
 }// This trailing comma makes auto-formatting nicer for build methods.
